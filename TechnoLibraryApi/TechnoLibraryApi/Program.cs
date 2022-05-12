@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
 
 //BindingAddress db context
-builder.Services.AddDbContext<TechnoLibDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("con")));
+builder.Services.AddDbContext<TechnoLibContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("con")));
 
 var app = builder.Build();
 
